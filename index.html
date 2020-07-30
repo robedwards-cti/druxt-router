@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Druxt.js Router</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="description" content="Simple decoupled Drupal routing for Nuxt.js">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="preload" href="/assets/css/0.styles.6c93e0c6.css" as="style"><link rel="preload" href="/assets/js/app.4b1942f6.js" as="script"><link rel="preload" href="/assets/js/2.35fa95a1.js" as="script"><link rel="preload" href="/assets/js/5.edf6f475.js" as="script"><link rel="prefetch" href="/assets/js/10.48f5c9a6.js"><link rel="prefetch" href="/assets/js/11.d327644e.js"><link rel="prefetch" href="/assets/js/12.98e27414.js"><link rel="prefetch" href="/assets/js/13.13fdc971.js"><link rel="prefetch" href="/assets/js/3.ae08ffde.js"><link rel="prefetch" href="/assets/js/4.f6332e18.js"><link rel="prefetch" href="/assets/js/6.9acf49d3.js"><link rel="prefetch" href="/assets/js/7.6a97deaf.js"><link rel="prefetch" href="/assets/js/8.883cbdac.js"><link rel="prefetch" href="/assets/js/9.849947c1.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.6c93e0c6.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-exact-active router-link-active"><img src="/logo.svg" alt="Druxt.js Router" class="logo"> <span class="site-name can-hide">Druxt.js Router</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link router-link-exact-active router-link-active">
+  Home
+</a></div><div class="nav-item"><a href="/guide/getting-started.html" class="nav-link">
+  Guide
+</a></div><div class="nav-item"><a href="/api/" class="nav-link">
+  API
+</a></div> <a href="https://github.com/druxt/druxt-router" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link router-link-exact-active router-link-active">
+  Home
+</a></div><div class="nav-item"><a href="/guide/getting-started.html" class="nav-link">
+  Guide
+</a></div><div class="nav-item"><a href="/api/" class="nav-link">
+  API
+</a></div> <a href="https://github.com/druxt/druxt-router" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Guide</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/" class="sidebar-link">Introduction</a></li><li><a href="/guide/getting-started.html" class="sidebar-link">Getting started</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>API Reference</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/api/" class="sidebar-link">Introduction</a></li><li><a href="/api/module.html" class="sidebar-link">DruxtRouterModule</a></li><li><a href="/api/router.html" class="sidebar-link">DruxtRouter</a></li><li><a href="/api/store.html" class="sidebar-link">DruxtRouterStore</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Components</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/api/components/DruxtRouter.html" class="sidebar-link">DruxtRouter</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Mixins</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/api/mixins/entity.html" class="sidebar-link">DruxtRouterEntityMixin</a></li></ul></section></li></ul> </aside> <main aria-labelledby="main-title" class="home"><header class="hero"><img src="./logo.svg" alt="hero"> <h1 id="main-title">
+      Druxt.js Router
+    </h1> <p class="description">
+      Simple decoupled Drupal routing for Nuxt.js
+    </p> <p class="action"><a href="/guide/getting-started.html" class="nav-link action-button">
+  Get started
+</a></p></header> <!----> <div class="theme-default-content custom content__default"><blockquote><p>The Druxt.js Router provides a wilcard route, with it's <a href="https://vuex.vuejs.org" target="_blank" rel="noopener noreferrer">Vuex<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> powered JSON:API client, to bring simple decoupled <a href="https://drupal.org" target="_blank" rel="noopener noreferrer">Drupal<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> routing to your <a href="https://nuxtjs.org" target="_blank" rel="noopener noreferrer">Nuxt.js<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> progressive web apps.</p></blockquote> <h2 id="druxt-js"><a href="#druxt-js" class="header-anchor">#</a> Druxt.js</h2> <p>This module is part of the Druxt.js project, find out more at <a href="http://druxtjs.org" target="_blank" rel="noopener noreferrer">druxtjs.org<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>.</p></div> <!----></main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.4b1942f6.js" defer></script><script src="/assets/js/2.35fa95a1.js" defer></script><script src="/assets/js/5.edf6f475.js" defer></script>
+  </body>
+</html>
