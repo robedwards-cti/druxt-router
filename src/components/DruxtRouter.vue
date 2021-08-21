@@ -31,7 +31,10 @@ export default {
   mixins: [DruxtComponentMixin],
 
   async middleware ({ store, redirect, route }) {
-    const result = await store.dispatch('druxtRouter/get', route.fullPath)
+    const result = await store.dispatch('druxtRouter/get', {
+      path: route.params.pathMatch,
+      langcode: route.meta[0].langcode
+    })
 
     // Process redirect.
     if (result.redirect) {

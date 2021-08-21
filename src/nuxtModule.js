@@ -56,14 +56,31 @@ const DruxtRouterNuxtModule = function (moduleOptions = {}) {
         options
       })
     }
-
-    // Add Druxt router custom wildcard route.
-    routes.push({
-      name: 'druxt-router',
-      path: '*',
-      component: options.router.component,
-      chunkName: 'druxt-router'
-    })
+    if (this.nuxt.options.i18n && this.nuxt.options.i18n.locales) {
+      this.nuxt.options.i18n.locales.forEach((locale) => {
+        routes.push({
+          name: `druxt-router___${locale.code}`,
+          path: `/${locale.code}/*`,
+          component: options.router.component,
+          chunkName: 'druxt-router',
+          meta: { langcode: locale.code }
+        })
+      })
+      routes.push({
+        name: 'druxt-router',
+        path: '/*',
+        component: options.router.component,
+        chunkName: 'druxt-router'
+      })
+    } else {
+      // Add Druxt router custom wildcard route.
+      routes.push({
+        name: 'druxt-router',
+        path: '*',
+        component: options.router.component,
+        chunkName: 'druxt-router'
+      })
+    }
   })
 
   // Add plugin.
